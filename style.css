@@ -1,0 +1,150 @@
+:root {
+  
+  /* Colors */
+  --primary1: hsl(158, 36%, 37%);
+  --primary2: hsl(30, 38%, 92%);
+  --neutral1: hsl(212, 21%, 14%);
+  --neutral2: hsl(228, 12%, 48%);
+  --neutral3: hsl(0, 0%, 100%);
+
+  /* Font Styling */
+  --fancy-font: 'Fraunces', serif;
+  --base-font: 'Montserrat', sans-serif;
+
+  --regular: 500;
+  --bold: 700;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* General */
+
+
+body {
+  font-family: var(--base-font);
+  font-weight: var(--regular);
+  font-size: 0.875rem;
+  color: var(--neutral2);
+  background-color: var(--primary2);
+
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip:rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.product {
+  --padding: 1.5rem;
+  --spacing: 1rem;
+
+  display: grid;
+  background-color: var(--neutral3);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 575px;
+}
+
+.product-content {
+  display: grid;
+  gap: var(--spacing);
+  padding: var(--padding);
+}
+
+.product-category {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-family: var(--fancy-font);
+  color: var(--neutral1);
+  line-height: 1;
+}
+
+.product-sale-price {
+  font-size: 2rem;
+  font-family: var(--fancy-font);
+  color: var(--primary1);
+}
+
+.button {
+  cursor: pointer;
+  padding: .75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  border: none;
+  background-color: var(--primary1);
+  color: var(--neutral3);
+  font-weight: var(--bold);
+  border-radius: 0.5rem;
+}
+
+.button:is(:hover, :focus) {
+  background-color: hsl(157, 38%, 23%);
+}
+
+.button[icon-data="shopping-cart"]::before {
+  content: '';
+  background-image: url(images/icon-cart.svg);
+  width: 15px;
+  height: 16px;
+}
+
+@media (min-width: 600px) {
+  .product {
+    --padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
