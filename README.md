@@ -15,8 +15,8 @@
 ![](/images/screenshot.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/JordonTurner/Product-Card)
-- Live Site URL: [Add live site URL here](https://perfume-prodcut-card.netlify.app/) (I spelled 'product wrong' :( )
+- Solution URL: [Github](https://github.com/JordonTurner/Product-Card)
+- Live Site URL: [Product Site](https://perfume-prodcut-card.netlify.app/) (I spelled 'product wrong' :( )
 
 ### Built with
 
