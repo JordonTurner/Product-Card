@@ -138,7 +138,7 @@ body {
   background-color: hsl(157, 38%, 23%);
 }
 
-.button[icon-data="shopping-cart"]::before {
+.button[data-icon="shopping-cart"]::before {
   content: '';
   background-image: url(images/icon-cart.svg);
   width: 15px;
