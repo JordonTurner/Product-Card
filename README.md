@@ -12,8 +12,7 @@
 
 ### Screenshot
 
-![](./screenshot.png)
-
+![](/images/screenshot.png)
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/JordonTurner/Product-Card)
